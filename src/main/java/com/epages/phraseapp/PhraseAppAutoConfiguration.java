@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Bean;
 public class PhraseAppAutoConfiguration {
 
     @Bean
-    @ConditionalOnProperty(PHRASEAPP_INCONTEXT_EDITOR_ENABLED)
+    @ConditionalOnProperty(value = PHRASEAPP_INCONTEXT_EDITOR_ENABLED, matchIfMissing = true)
     public MessageSource messageSource(PhraseAppProperties properties) {
         return new PhraseAppMessageSource(properties);
     }
 
     @Bean
-    @ConditionalOnProperty(PHRASEAPP_INCONTEXT_EDITOR_ENABLED)
+    @ConditionalOnProperty(value = PHRASEAPP_INCONTEXT_EDITOR_ENABLED, matchIfMissing = true)
     public PhraseAppProjectIdProvider phraseAppDefaultProjectIdProvider() {
         return new PhraseAppConfigurationPropertyProjectIdProvider();
     }
