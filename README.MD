@@ -1,4 +1,4 @@
-#Phraseapp-spring-boot-starter
+# phraseapp-spring-boot-starter
 
 ### What is inside?
 
@@ -16,13 +16,13 @@ It is assumed that you have already finished preparing you translation keys and 
 
 ##### Add the Gradle script
 
-```
+```groovy
 runtime 'com.epages:phraseapp-spring-boot-starter:0.0.1'
 ```
 
 ##### Add the Maven script
 
-```
+```xml
 <dependency>
   <groupId>com.epages</groupId>
   <artifactId>phraseapp-spring-boot-starter</artifactId>
@@ -59,11 +59,3 @@ phraseapp:
     <script th:utext="${@phraseAppJavascriptHeader.getHeader()}"></script>
 </head>
 ```
-
-
-
-
-
-
-
-
