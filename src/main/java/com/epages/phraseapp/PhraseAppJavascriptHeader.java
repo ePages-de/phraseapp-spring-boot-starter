@@ -9,7 +9,7 @@ public class PhraseAppJavascriptHeader {
 
     private static final String JS_SCRIPT_TEMPLATE =
             "window.PHRASEAPP_CONFIG = {\n" +
-                    "  projectId: %s '\n" +
+                    "  projectId: '%s'\n" +
                     "};\n" +
                     "(function() {\n" +
                     "    var phraseapp = document.createElement('script');\n" +
