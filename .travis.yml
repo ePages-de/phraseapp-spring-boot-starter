@@ -5,6 +5,8 @@ sudo: false
 cache:
   directories:
   - "$HOME/.gradle"
+before_install:
+  - chmod +x publish.sh
 install: true
 script: "./gradlew clean build"
 after_success:
