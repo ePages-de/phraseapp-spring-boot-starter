@@ -75,3 +75,5 @@ bintray {
         licenses = ['Apache-2.0']
     }
 }
+
+publish.dependsOn('bintrayUpload')
