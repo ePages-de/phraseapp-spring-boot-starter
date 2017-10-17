@@ -79,7 +79,7 @@ publish.dependsOn('bintrayUpload')
 
 scmVersion {
     tag {
-        prefix = ''
+        prefix = 'phraseapp-spring-boot-starter'
     }
 }
 
