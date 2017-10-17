@@ -77,3 +77,11 @@ bintray {
 }
 
 publish.dependsOn('bintrayUpload')
+
+scmVersion {
+    tag {
+        prefix = ''
+    }
+}
+
+project.version = scmVersion.version
