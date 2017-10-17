@@ -25,7 +25,6 @@ plugins {
 apply plugin: 'org.springframework.boot'
 
 group = 'com.epages'
-version = '0.0.2-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
